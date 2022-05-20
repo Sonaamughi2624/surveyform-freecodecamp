@@ -1,0 +1,92 @@
+body{
+	font-family: Tahoma;
+	font-size: 17px;
+}
+
+#title,#description {
+  text-align: center;
+}
+ 
+.main{
+   background-image: url("https://scontent.fmaa14-1.fna.fbcdn.net/v/t1.6435-9/185834351_2956486401255313_1438337605301238905_n.jpg?stp=cp0_dst-jpg_e15_p320x320_q65&_nc_cat=106&ccb=1-7&_nc_sid=2d5d41&_nc_ohc=9_elK75Vw8IAX_bK0GC&_nc_ht=scontent.fmaa14-1.fna&oh=00_AT_ryZG3T5MK_n3iXqn4CQYr0TuMFbP1kMlWV5mwelwKPg&oe=62AAEAE8");
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   font-size: 17px;
+   overflow-y: scroll;
+}
+
+.main-content {
+    background-color: rgba(218, 218, 237, 0.9);
+      max-width: 650px;
+      height: 1050px;
+      display: flex;
+      flex-direction: column;
+      padding: 40px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      z-index: 2;
+      position: relative;
+      box-shadow: 0px -1px 10px 5px rgb(192, 165, 192);
+  }
+
+  #name, #email, #number, #dropdown, #comment {
+    display: block;
+    width: 96%;
+    height: 30px;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+label[for=name], 
+label[for=email],
+label[for=number],
+label[for=dropdown],
+label[for=comment] {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#comment {
+  min-height: 130px;
+}
+
+label[for=comment]{
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+#video-length, 
+#content-quality,
+#more-videos,
+fieldset input {
+  height: 20px;
+  width: 20px;
+  margin-top: 2px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+#submit{
+    display: block;
+    width: 70%;
+    padding: 0.76rem;
+    background-color: #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 0;
+    color: #121111;
+    font-size: 20px;
+    margin: auto;
+}
+
+#submit:hover {
+  background-color: rgb(197, 119, 197);
+  color:#121111;
+}

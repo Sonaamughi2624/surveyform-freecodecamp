@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Codecamp survey form</title>
+<link href="surveyForm.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main">
+	<h1 id="title">College survey form</h1>
+	<p id="description">Let us start exploring about you!!</p>
+    <div class="main-content">
+        <!-- <div class="form-content"> -->
+	<form id="survey-form">
+		<label id="name-label" for="name"> NAME: </label><input id="name" type="text" required placeholder="Enter your name"/>
+	<label id="email-label" for="email">EMAIL: </label><input id="email" type="email" required placeholder="Enter your email" />
+	<label id="number-label" for="number">AGE: </label><input type="number" id="number" min="17" max="27" required placeholder="Select your age">
+
+	<label for="dropdown">What technology or field are you interested in? :  </label>
+		<select id="dropdown">
+			<option value="">(selct one)</option>
+			<option value="1">WEB DEVELOPMENT</option>
+			<option value="2">APP DEVELOPMENT</option>
+			<option value="3">UI/UX DESIGNER</option>
+			<option value="4">DATA SCIENCE</option>
+        </select>
+        <fieldset>
+            <legend>How do you like to take your classes? : </legend>
+        <input type="radio" name="classes" value="self-learning" class="inline" />Self learning <br>
+        <input type="radio" name="classes" value="Online-mode" class="inline" />Online mode<br>
+        <input type="radio" name="classes" value="In-person" class="inline" />In person
+        </fieldset>
+        <br>
+        <label>How long you wish to study? </label> <br>
+        <input type="checkbox" id="video-length" />3months - 6months <br>
+        <input type="checkbox" id="content-quality"/>6months - 10months <br>
+        <input type="checkbox" id="more-videos" />1 year
+        <br>
+        <label for="comment">Something about you that you want to share with us:</label>
+        <textarea id="comment">Your thoughts :D</textarea>
+        <input type="submit" id="submit" />
+    </form>
+<!-- </div> -->
+</div>
+</div>
+</body>
+</html>
